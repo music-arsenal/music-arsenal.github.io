@@ -1,0 +1,82 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/*========1024===============*/
+@media only screen and (max-width : 990px){
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 990px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+
+
+}
+/*tablet 600*1024*/
+@media only screen and (max-width : 600px){
+
+}
+
+/*=============================== Custom, iPhone Retina =================================*/
+@media only screen and (max-width : 568px)
+{
+
+
+}
+
+
+
+/*=============================== Custom, iPhone Retina =================================*/
+@media only screen and (max-width : 534px)
+{
+
+}
+/*======================475==========*/
+@media only screen and (max-width : 475px)
+{
+
+}
+/*========================414====================*/
+@media only screen and (max-width : 414px)
+{
+
+}
+
+/*======================media nexus======================*/
+@media only screen and (max-width : 412px)
+{
+
+}
+
+/*========================384====================*/
+@media only screen and (max-width : 384px)
+{
+
+}
+/*========================370====================*/
+@media only screen and (max-width : 375px)
+{
+
+
+}
+/*====================== Extra Small Devices, Phones =========================*/
+@media only screen and (max-width : 360px)
+{
+
+}
+/*====================320===================*/
+@media only screen and (max-width : 320px)
+{
+
+}
+
+
+
+
