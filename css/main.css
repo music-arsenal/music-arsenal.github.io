@@ -1,7 +1,6 @@
 header{
     width: 100%;
     background:#af9559;
-    padding-top:15px;
 }
 .header-street ul,
 .header-purchase ul{
@@ -31,14 +30,16 @@ header{
 .header-purchase ul li > a:focus{
     text-decoration:none;
 }
-.header-phone p{color:#fff;}
-.header-purchase ul li > a{color:#fff;border-bottom:1px solid #fff;}
-.header-purchase ul li:nth-of-type(4) > a {border-bottom:1px dashed #fff;}
-.header-purchase ul li:last-child > a{border-bottom:none;}
+.header-phone p                           { color:#fff; }
+.header-purchase ul li > a                { color:#fff;border-bottom:1px solid #fff; }
+.header-purchase ul li:nth-of-type(4) > a { border-bottom:1px dashed #fff; }
+.header-purchase ul li:last-child > a     { border-bottom:none; }
 .elem-icon{
-    font-size: 18px;
+    font-size: 20px;
     vertical-align: middle;
 }
+.header-street, .header-phone{ margin-top:10px; }
+.header-purchase             { margin-top: 5px; }
 .logo p {
     padding:0;
     margin:0;
