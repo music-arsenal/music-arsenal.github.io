@@ -1,3 +1,9 @@
+html{
+    overflow-x:hidden;
+}
+*{
+    box-sizing:border-box;
+}
 header{
     width: 100%;
     background:#af9559;
