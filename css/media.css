@@ -1,25 +1,25 @@
-/*==========  Desktop First Method  ==========*/
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-
-}
-/*========1024===============*/
-@media only screen and (max-width : 990px){
-
-}
-/* Medium Devices, Desktops */
+/*================================ Medium Devices, Desktops ===================================*/
 @media only screen and (max-width : 990px) {
-
+    .header-purchase,
+    .header-street,
+    .header-phone{
+        text-align:center;
+    }
+    .logo p:first-child
+    {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
-/* Small Devices, Tablets */
+/*================================ Small Devices, Tablets ===================================*/
 @media only screen and (max-width : 768px) {
 
 
 
 }
-/*tablet 600*1024*/
+/*================================ tablet 600*1024 ===================================*/
 @media only screen and (max-width : 600px){
 
 }
