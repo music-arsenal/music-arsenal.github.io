@@ -119,7 +119,9 @@ header{
     padding:10px 15px;
 }
 .navigation ul li:hover{
-    background:red;
+    background:#ff2d2d;
+    color:#fff;
+    border-radius:20px;
 }
 .navigation ul li a:hover,
 .navigation ul li a:focus
