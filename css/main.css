@@ -118,11 +118,20 @@ header{
     float:left;
     padding:10px 20px;
 }
+.navigation ul li.active a{
+    color:#c1a25a;
+    font-weight:bold;
+}
+
 .navigation ul li:hover{
     background:#ff2d2d;
     border-radius:20px;
 }
-.navigation ul li:hover a{color:#fff;}
+.nafigation ul li.active a:hover,
+.navigation ul li:hover a
+{
+    color:#fff;
+}
 .navigation ul li a:hover,
 .navigation ul li a:focus
 {
