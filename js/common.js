@@ -2,10 +2,15 @@
 * основной js файл
 **/
 $(document).ready(function () {
-    var menu = $('.menu');
-    menu.find('li').click(function () {
-        menu.find('li').removeClass('active');
+    var Menu = $('.menu');
+    var SubMenu = $('.submenu');
+    Menu.find('li').click(function () {
+        Menu.find('li').removeClass('active');
        $(this).addClass('active');
+        SubMenu.find('li').click(function () {
+           SubMenu.find('li').removeClass('activ');
+            $(this).addClass('activ');
+        });
     });
 
     $('.one-time').slick({
