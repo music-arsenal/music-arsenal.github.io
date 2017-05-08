@@ -157,6 +157,7 @@ header{
 .submenu > li{
     padding:10px;
 }
+.submenu >li.activ,
 .submenu > li:hover{
     border-left:3px solid #8c7747;
     background:#af9559;
