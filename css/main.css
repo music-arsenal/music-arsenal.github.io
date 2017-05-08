@@ -111,38 +111,60 @@ header{
     padding: 10px 0;
     border-top: 1px solid #ccc;
 }
-.navigation ul{
+.menu{
     list-style: none;
+    position:relative;
 }
-.navigation ul li{
+.menu > li{
     float:left;
     padding:10px 20px;
 }
-.navigation ul li.active a{
+.menu .active > a{
     color:#c1a25a;
     font-weight:bold;
 }
 
-.navigation ul li:hover{
+.menu > li:hover{
     background:#ff2d2d;
     border-radius:20px;
 }
-.nafigation ul li.active a:hover,
-.navigation ul li:hover a
+.menu > li.active a:hover,
+.menu > li:hover a
 {
     color:#fff;
 }
-.navigation ul li a:hover,
-.navigation ul li a:focus
+.menu > li a:hover,
+.menu > li a:focus
 {
     text-decoration:none;
 }
-.navigation ul li a{
+.menu > li a{
     color:#503737;
     text-decoration:none;
     font-size:17px;
 }
-
+.submenu{
+    list-style:none;
+    background:rgba(0,0,0, 0.8);
+    position:absolute;
+    z-index:1;
+    margin-top:18px;
+    transition: .3s ease-in-out;
+    height:460px;
+    width:19%;
+    padding:0;
+}
+.submenu > li{
+    padding:10px;
+}
+.submenu > li:hover{
+    border-left:3px solid #8c7747;
+    background:#af9559;
+    margin-left: -3px;
+}
+.submenu li a{
+    color:#fff;
+}
 
 /*=============== Carousel base class ==========================*/
 .section-carousel{
@@ -159,7 +181,7 @@ header{
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 460px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
