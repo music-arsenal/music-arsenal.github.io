@@ -145,7 +145,7 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 35%;
 
     display: block;
 
@@ -189,7 +189,7 @@
 .slick-next:before
 {
     font-family: 'fontello';
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1;
 
     opacity: .75;
