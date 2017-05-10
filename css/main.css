@@ -128,32 +128,50 @@ header{
     background:#ff2d2d;
     border-radius:20px;
 }
-.menu > li.active a:hover,
-.menu > li:hover a
+.last-menu li.activi > a,
+.last-menu > li.activi,
+.menu li.active > a:hover,
+.menu li:hover > a,
+.last-menu > li:hover
 {
     color:#fff;
 }
-.menu > li a:hover,
-.menu > li a:focus
+.menu li > a:hover,
+.menu li > a:focus
 {
     text-decoration:none;
 }
-.menu > li a{
+.menu li > a{
     color:#503737;
     text-decoration:none;
     font-size:17px;
 }
+
 .submenu{
     list-style:none;
     background:rgba(0,0,0, 0.8);
     position:absolute;
-    z-index:1;
+    z-index:17;
     margin-top:18px;
-    transition: .3s ease-in-out;
     height:460px;
     width:19%;
     padding:0;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
 }
+
+.submenu li:hover > .last-menu,
+.last-menu li:hover > .indicate-product,
+.menu li:hover > .submenu {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+
 .submenu > li{
     padding:10px;
 }
@@ -163,9 +181,92 @@ header{
     background:#af9559;
     margin-left: -3px;
 }
-.submenu li a{
+.submenu li > a{
     color:#fff;
+    transition: .3s linear;
+    display:block;
 }
+.last-menu{
+    position: absolute;
+    display: block;
+    margin-left: 95%;
+    background: #af9559;
+    top: 0;
+    width: 100%;
+    height: 460px;
+    padding:0 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+}
+.last-menu > li{
+    padding:10px;
+    list-style: disc;
+}
+.last-menu > li,
+.last-menu li > a{
+    color: rgba(253, 253, 253, 0.8);
+}
+.last-menu > li.activi{
+
+}
+.indicate-product{
+    position: absolute;
+    margin-left: 81%;
+    background: #af9559;
+    top: 0;
+    border-left: 1px solid #8c7747;
+    width: 100%;
+    height: 460px;
+    padding: 0 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+}
+.indicate-product--img{
+    width: 100px;
+    height: 290px;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+.indicate-product > p{
+    color: #444;
+}
+.indicate-product > p:nth-of-type(1){
+    text-align: center;
+    text-decoration: underline;
+    font-size: 16px;
+}
+.indicate-product--price{
+    background:#fff;
+}
+.indicate-product--price > p{
+    color:#e73939;
+    font-weight:bold;
+    font-size:18px;
+    text-align:center;
+}
+.indicate-product--price > p:after{
+    content: '\20BD';
+    margin-left:10px;
+    font-weight:normal;
+}
+.indicate-product--price p > span{
+    color: #777;
+    text-decoration: line-through;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+
+
 
 /*=============== Carousel base class ==========================*/
 .section-carousel{
