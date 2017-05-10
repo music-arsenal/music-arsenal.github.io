@@ -295,16 +295,15 @@ header{
 }
 
 /*================ slick======================*/
-   .slider {
+   .brend {
         width: 100%;
     }
 
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
+    .brend img {
+      width: 110px;
+      height: 70px;
+      margin: 0 auto;
+      object-fit: contain;
     }
 
     .slick-prev:before,
