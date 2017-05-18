@@ -324,7 +324,7 @@ ul.tabs-caption li.active{
 }
 
 /*================ slick======================*/
-   .brend {
+   .brend, .closeout-tools {
         width: 100%;
     }
 
@@ -339,6 +339,11 @@ ul.tabs-caption li.active{
     .slick-next:before {
         color: black;
     }
+
+.closeout-tools{
+
+}
+
 /*================ end slick======================*/
 .title {
     overflow: hidden;

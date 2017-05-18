@@ -18,16 +18,7 @@ $(document).ready(function () {
           $(this).addClass('activi');
       });
 
-    $('.one-time').slick({
-      infinite: true,
-      speed: 300,
-      slidesToShow: 1,
-      adaptiveHeight: true
-    });
-
-
-
-$('.autoplay').slick({
+$('.brend').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
@@ -49,7 +40,12 @@ $(function() {
 });
 
 
-
+$('.closeout-tools').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
 
 
 });
