@@ -34,13 +34,21 @@ $('.autoplay').slick({
   autoplaySpeed: 2000,
 });
 
-/*tabs*/
-    var tabs = $('.content_tabs');
-    tabs.find('ul li').click( function() {
-        tabs.find('ul li').removeClass('tab_active');
-        $(this).addClass('tab_active');
-        console.log(this);
-    } );
+/*tabs тестируем новый метод табов*/
+
+
+$(function() {
+
+  $('ul.tabs-caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      console.log(this);
+//      .closest('div.tabs').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+});
+
+
 
 
 

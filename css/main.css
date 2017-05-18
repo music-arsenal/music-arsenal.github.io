@@ -265,7 +265,7 @@ header{
     font-weight: normal;
 }
 /*=====================tabs=========*/
-.content_tabs
+.tabs
 {
     margin:20px auto;
     width:301px;
@@ -274,12 +274,12 @@ header{
     background:#503737;
     border-radius:30px;
 }
-.content_tabs ul{
+ul.tabs-caption{
     list-style:none;
     margin:0;
     padding:0;
 }
-.content_tabs ul li{
+ul.tabs-caption li{
     float:left;
     padding:10px 10px;
     font-size:16px;
@@ -287,11 +287,11 @@ header{
     cursor:pointer;
     border-radius:30px;
 }
-.content_tabs ul li > a{
+ul.tabs-caption li > a{
     color:#fff;
     text-decoration:none;
 }
-.content_tabs ul li.tab_active{
+ul.tabs-caption li.active{
     background:#ff2d2d;
 }
 
