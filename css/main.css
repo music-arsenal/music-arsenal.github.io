@@ -264,8 +264,33 @@ header{
     font-size: 14px;
     font-weight: normal;
 }
-
-
+/*=====================tabs=========*/
+.content_tabs
+{
+    margin:20px auto;
+    width:301px;
+    height:50px;
+    text-align:center;
+    background:#503737;
+    border-radius:30px;
+}
+.content_tabs ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.content_tabs ul li{
+    float:left;
+    padding:10px 10px;
+    font-size:16px;
+    line-height:30px;
+    color:#fff;
+    cursor:pointer;
+    border-radius:30px;
+}
+.content_tabs ul li.tab_active{
+    background:#ff2d2d;
+}
 
 
 
