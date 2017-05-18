@@ -34,6 +34,15 @@ $('.autoplay').slick({
   autoplaySpeed: 2000,
 });
 
+/*tabs*/
+    var tabs = $('.content_tabs');
+    tabs.find('ul li').click( function() {
+        tabs.find('ul li').removeClass('tab_active');
+        $(this).addClass('tab_active');
+        console.log(this);
+    } );
+
+
 
 });
 
