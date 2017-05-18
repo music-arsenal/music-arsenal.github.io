@@ -340,8 +340,11 @@ ul.tabs-caption li.active{
         color: black;
     }
 
-.closeout-tools{
-
+.closeout-tools img{
+    width:230px;
+    height:340px;
+    margin:0 auto;
+    object-fit:contain;
 }
 
 /*================ end slick======================*/
