@@ -316,6 +316,8 @@ header{
     text-align: center;
     text-decoration:underline;
     color:#503737;
+    line-height:20px;
+    font-size:16px;
 }
 .title:before,
 .title:after {
@@ -335,4 +337,13 @@ header{
     margin-right: -100%;
     right: -14px;
     background: linear-gradient(to left, #fff, #b1a8a8);
+}
+.closeout{
+    margin-top:45px;
+}
+.closeout h1{
+    color:#503737;
+    font-size:  40px;
+    line-height:60px;
+    text-align:center;
 }
