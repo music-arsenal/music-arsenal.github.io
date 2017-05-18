@@ -39,7 +39,7 @@ $(function() {
 
 });
 
-
+/*второй слайдер*/
 $('.closeout-tools').slick({
   slidesToShow: 4,
   slidesToScroll: 1,
