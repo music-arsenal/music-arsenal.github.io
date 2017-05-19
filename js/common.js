@@ -25,19 +25,19 @@ $('.brend').slick({
   autoplaySpeed: 2000,
 });
 
-/*tabs тестируем новый метод табов*/
 
 
-$(function() {
 
-  $('ul.tabs-caption').on('click', 'li:not(.active)', function() {
-    $(this)
-      .addClass('active').siblings().removeClass('active')
-      console.log(this);
-//      .closest('div.tabs').find('div.tabs-content').removeClass('active').eq($(this).index()).addClass('active');
-  });
+      $('.tabs .tabs-caption a').click(function(e) {
+      var currentAttrValue = $(this).attr('href');
+      $('.tabs ' + currentAttrValue).fadeIn(500).siblings().hide();
+      $(this).parent('li').addClass('active').siblings().removeClass('active');
+      e.preventDefault();
+          console.log(this);
+        $('.tab-content').find('.tab').removeClass('active');
+        $('.tab-content').find('.tab').addClass('active');
+      });
 
-});
 
 /*второй слайдер*/
 $('.closeout-tools').slick({
