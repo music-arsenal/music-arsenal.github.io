@@ -328,6 +328,30 @@ transition: all linear 0.5s;
     text-decoration:line-through;
     padding-right:10px;
 }
+.service-elem > p
+{
+    font-size:12px;
+    line-height:20px;
+    color:#444444;
+    clear:both;
+}
+.service-title{
+    width:210px;
+}
+.service-title img{
+    float:left;
+    width: 66px;
+    height:70px;
+    object-fit:contain;
+    margin-right:20px;
+}
+.service-title p{
+    text-decoration:underline;
+    color:#d8424b;
+    font-size:18px;
+    line-height:25px;
+}
+
 /*=============== Carousel base class ==========================*/
 .section-carousel{
     border-top:2px solid #ef383f;
@@ -421,13 +445,38 @@ transition: all linear 0.5s;
     right: -14px;
     background: linear-gradient(to left, #fff, #b1a8a8);
 }
-.closeout{
+.closeout,
+.service{
     margin-top:45px;
 }
-.closeout h1{
+.closeout h1,
+.service h1{
     color:#503737;
     font-size:  40px;
     line-height:60px;
     text-align:center;
     font-family: 'Roboto-Light';
 }
+.service{
+    overflow: hidden;
+}
+.service:before,
+.service:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 1px;
+    position: relative;
+}
+.service:before {
+    margin-left: -100%;
+    left: -14px;
+    background: #444444;
+}
+.service:after {
+    margin-right: -100%;
+    right: -14px;
+    background: #444444;
+}
+
