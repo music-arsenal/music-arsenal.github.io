@@ -304,6 +304,7 @@ transition: all linear 0.5s;
     line-height:20px;
     text-align:center;
     padding:0 20px;
+    height:50px;
 }
 .closeout-tools--elem p:first-child{
     font-size:16px;
@@ -327,7 +328,6 @@ transition: all linear 0.5s;
     text-decoration:line-through;
     padding-right:10px;
 }
-
 /*=============== Carousel base class ==========================*/
 .section-carousel{
     border-top:2px solid #ef383f;

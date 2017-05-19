@@ -34,8 +34,8 @@ $('.brend').slick({
       $(this).parent('li').addClass('active').siblings().removeClass('active');
       e.preventDefault();
           console.log(this);
-        $('.tab-content').find('.tab').removeClass('active');
-        $('.tab-content').find('.tab').addClass('active');
+        $(this).parent('.tab-content').find('.tab').removeClass('active');
+        $(this).parent('.tab-content').find('.tab').addClass('active');
       });
 
 
