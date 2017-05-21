@@ -460,7 +460,7 @@
         <div class="col-md-3">
             <p>&copy;&nbsp;2017 Музыкальный арсенал</p>
             <a href="#">Правила использования сайта</a>
-            <a href="#">Связаться с нами</a>
+            <button class="open-popups">Связаться с нами</button>
         </div>
         <div class="col-md-3">
             <a href="#">Магазин в Новосибирске</a>
@@ -495,7 +495,35 @@
 </footer> 
 <!-- end section -->
 
+<div id="popup">
+<div class="popups_bg"></div>
+     <div class="popups">
+       <form class="form" autocomplete="off">
+       <div>
+<i id="close" class="glyphicon glyphicon-remove elem-icon-remove" aria-hidden="true"></i>
+      </div>
+<div>
+    <p>Заказать:</p>
+</div>
+      <fieldset class="form-fieldset ui-input __first">
+        <input name="uname" type="text" id="username" tabindex="0"/>
+        <label for="username">
+          <span data-text="Введите ваше имя">Введите ваше имя</span>
+        </label>
+      </fieldset>
 
+      <fieldset class="form-fieldset ui-input __second">
+        <input name="uphone" type="text" id="phone" class="phone2" tabindex="0"/>
+        <label for="phone">
+          <span data-text="Введите ваш телефон">Введите ваш телефон</span>
+        </label>
+      </fieldset>
+      <div class="form-footer">
+        <input type="submit" class="formBtn" value="Обратный звонок" />
+      </div>
+  </form>
+  </div>
+  </div>
 
 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>    
