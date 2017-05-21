@@ -46,6 +46,14 @@ $('.closeout-tools').slick({
   autoplay: true,
   autoplaySpeed: 4000,
 });
+/*третий слайдер*/
+$('.stock-slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+});
+
 
 
 });
