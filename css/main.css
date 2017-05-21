@@ -530,4 +530,22 @@ transition: all linear 0.5s;
     padding:50px 30px 60px 30px;
     margin-top:-26px;
 }
+/*=====================footer=================*/
+footer{
+    background:#5d5555;
+    margin-top:60px;
+    padding:40px 0;
+}
 
+footer p, footer a, footer a:hover{
+    color:#fff;
+    margin-bottom:15px;
+}
+footer a{
+    text-decoration:underline;
+    display:block;
+}
+footer i{
+    padding-right:5px;
+    font-size:16px;
+}
