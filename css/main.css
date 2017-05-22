@@ -267,7 +267,7 @@ header{
 /*=====================tabs======================*/
 .tab{display:none;}
 .tab .active{display:block;}
-.tabs
+.tab-element
 {
     margin:20px auto;
     width:301px;
@@ -276,12 +276,12 @@ header{
     background:#503737;
     border-radius:30px;
 }
-ul.tabs-caption{
+ul.tabs{
     list-style:none;
     margin:0;
     padding:0;
 }
-ul.tabs-caption li{
+ul.tabs li{
     float:left;
     padding:10px 10px;
     font-size:16px;
@@ -289,11 +289,11 @@ ul.tabs-caption li{
     cursor:pointer;
     border-radius:30px;
 }
-ul.tabs-caption li > a{
+ul.tabs li > a{
     color:#fff;
     text-decoration:none;
 }
-ul.tabs-caption li.active{
+ul.tabs li.active{
     background:#ff2d2d;
 }
 .closeout-tools{

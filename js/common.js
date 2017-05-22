@@ -27,18 +27,30 @@ $('.brend').slick({
 
 
 
+/* tabs */
+     //скрыть весь контент
+	$('.tab_content').hide();
+	//Показать контент первой вкладки
+	$('.tab_content:first').show();
+	//Активировать первую вкладку
+	$('.tabs li:first').addClass('active');
 
-      $('.tabs .tabs-caption a').click(function(e) {
-      var currentAttrValue = $(this).attr('href');
-      $('.tabs ' + currentAttrValue).fadeIn(500).siblings().hide();
-      $(this).parent('li').addClass('active').siblings().removeClass('active');
-      e.preventDefault();
-          console.log(this);
-        $(this).parent('.tab-content').find('.tab').removeClass('active');
-        $(this).parent('.tab-content').find('.tab').addClass('active');
-      });
+	//Событие по клику
+	$('.tabs li').click(function(event) {
+		//Удалить "active" класс
+		$('.tabs li').removeClass('active');
+		//Добавить "active" для выбранной вкладки
+		$(this).addClass('active');
+		//Скрыть контент вкладки
+		$('.tab_content').hide();
 
-
+		//Найти значение атрибута ссылки, чтобы
+		//определить активный таб контент
+		var selectTab = $(this).find('a').attr("href");
+		//Исчезновение активного контента
+		$(selectTab).fadeIn();
+	});
+/*end tabs*/
 /*второй слайдер*/
 $('.closeout-tools').slick({
   slidesToShow: 4,
